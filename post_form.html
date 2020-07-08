@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Blog_Design.css">
+<link rel="stylesheet" type="text/css" href="post_form.css">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<script src="validate.js"></script>
+</head>
+<body>
+	<!--Header starts here-->
+	<div class="header col-12">
+	<a href="#Subscribe"> Subscribe </a>
+	<div class="header-centered">
+    <a href="Blog_Design.html"><b>Large</b></a>
+	</div>
+	<div class="header-right">
+    <button type="submit" style="float:left;width: 5%;margin-right:5%;outline:none; padding: 15px; background: white; color: #b3b3b3; font-size: 17px; border:none;"><i class="fa fa-search"></i></button>
+    <a href="#signup">Sign up</a>
+	<a href="post_form.html"> Post </a>
+  </a>
+  </div>
+  </div>
+	<hr>
+	<!--End of header-->
+
+	
+	<!-- Navigation bar using navbar.css in a list format-->
+	<div class="navigation" id="nav">
+	  <a href="#world">World</a>
+	  <a href="#us">U.S.</a>
+	  <a href="#technology">Technology</a>
+	  <a href="#design">Design</a>
+	  <a href="#culture">Culture</a>
+	  <a href="#business">Business</a>
+	  <a href="#politics">Politics</a>
+	  <a href="#opinion">Opinion</a>
+	  <a href="#science">Science</a>
+	  <a href="#health">Health</a>
+	  <a href="#style">Style</a>
+	  <a href="#travel">Travel</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	<hr>
+	<!--End of Navbar code-->
+	
+	
+<div class="row" style="padding:20px 30px 20 30px;">
+	<!-- section-->	
+	<div class="col-9 section_container">
+		<div style="padding-right:20px;">
+		<h1><i> BLOG POST SUBMISSION FORM: </i> </h1>
+		<hr style="border:none; border-top:2px dotted #000; color:#fff; background-color:#fff; height:1px;">
+		</div>
+		<div style="padding:2% 2% 2% 2%; margin-right:1vw; border: 0.5px solid gray; border-radius: 5px 5px 5px 5px; box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);">
+		
+		<form name="form1" action="Blog_Design.html" onsubmit="return validateForm()" method="post">
+			<fieldset style="padding:2% 2% 2% 2%">
+			<legend> <i><h3>Author Details:</i></h3> </legend>
+			<label name="fname"> First Name: 
+			<input type="text" id="fname" placeholder="Enter first name" required> <br><br>
+			<label name="lname"> Last Name:
+			<input type="text" name="lname" placeholder="Enter last name" required> <br><br>
+			<label name="dob"> Date of Birth:
+			<input type="date" id="dob" name="dob" placeholder="Enter DOB" required><br><br>
+			<label name="email">Email:
+			<input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+			<label name="Bio" > Write Your Bio: <small> Max 300 characters </small>
+			<textarea rows="3" id="bio" name="bio" placeholder="Enter bio here..." required></textarea><br>
+			</fieldset>
+			<br>
+			<fieldset style="padding:2% 2% 2% 2%">
+			<legend> <i><h3>Blog Post Details:</i></h3> </legend>
+			<label name="title"> Post Title:
+			<input type="text" id="title" placeholder="Enter title of your post" required> <br><br>
+			<label name="Content"> Post Content:
+			<textarea rows="6" id="content" name="content" placeholder="Write Content..." required></textarea><br><br>
+			<label name="image"> Image to be added alongside:
+			<input type="file" id="img" name="img" accept="image/*" required>
+			<button type="button" value="Send" name="Upload" onclick="alert('You have successfully uploaded the file!')">Upload</button><br><br>
+			<label name="Excerpt">Post Excerpt: <small> Max 300 characters </small>
+			<textarea rows="4" id="excerpt" name="excerpt" placeholder="Enter Excerpt" required></textarea><br><br>
+			<label name="category" > Category? 
+			<select id="category" name="category">
+			<option value="World">World</option>
+			<option value="US">U.S.</option>
+			<option value="Environment" selected>Environment</option>
+			<option value="Media">Media</option>
+			</select><br>
+			</fieldset>
+			<br>
+			<button type="submit"> Submit</button>
+			<button type="reset">Reset form </button>
+			
+		</form>
+		
+		</div>
+	</div>
+	<br><br>
+	
+	<!--End section-->
+	<!--aside-->
+	<div class="col-3 aside_container">
+		<div style="background-color:#e6e6e6;text-align:left;padding:20px; margin-top:40px;;">
+		<b style="font-size: 2.5vw;font-family:Times New Roman"><i> About</i></b>
+		<p>Etiam porta sem <i>malesuada magna mollis</i> euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla  sed consectetur.
+		</div>
+		
+		<div style="text-align:left;padding:20px;">
+		<br>
+		<b style="font-size: 2.5vw;font-family:Times New Roman"><i> Archives</i></b>
+		<p><a href="#" style="color:blue;text-decoration:none"> March 2014 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> February 2014 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> January 2014 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> December 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> November 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> October 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> September 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> August 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> July 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> June 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> May 2013 </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> April 2013 </a>
+		</div>
+		
+		<div style="text-align:left;padding:15px;">
+		<br>
+		<b style="font-size: 2vw;font-family:Times New Roman"><i> Elsewhere</i></b>
+		<p><a href="#" style="color:blue;text-decoration:none"> Github </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> Twitter </a><br>
+		<a href="#" style="color:blue;text-decoration:none"> Facebook </a><br>
+		
+		</div>
+	</div>
+	<!--end aside-->
+	</div>
+	<br>
+	<div class="footer">
+	Blog template built for <a href="#" style="color:blue;text-decoration:none"> Bootstrap </a> by
+	<a href="#" style="color:blue;text-decoration:none"> @mdo </a>
+	<br><br>
+	<button type="button" onclick="topFunction()" id="myBtn" title="Go to top" style="font-size:1vw; background-color:#e6e6e6; color:blue; border:none;outline:none;"> Back to top </button>
+	</div>
+</body>
+<script>
+function myFunction() {
+  var x = document.getElementById("nav");
+  if (x.className === "navigation") {
+    x.className += " responsive";
+  } else {
+    x.className = "navigation";
+  }
+}
+
+var mybutton = document.getElementById("myBtn");
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</html>
